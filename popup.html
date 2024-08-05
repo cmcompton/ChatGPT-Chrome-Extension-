@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skaled's Salesloft Assistant</title>
+  <style>
+    body {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    #chat {
+      flex: 1;
+      width: 100%;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #f9f9f9;
+    }
+    #chat .message {
+      margin-bottom: 10px;
+    }
+    #chat .message.user {
+      text-align: right;
+      color: blue;
+    }
+    #chat .message.bot {
+      text-align: left;
+      color: green;
+    }
+    #inputArea {
+      display: flex;
+      width: 100%;
+    }
+    #inputArea input {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+    }
+    #inputArea button {
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    #inputArea button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Skaled's Salesloft Assistant</h1>
+  <div id="chat"></div>
+  <div id="inputArea">
+    <input type="text" id="userInput" placeholder="Type a message...">
+    <button id="sendButton">Send</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Skaled + Salesloft Assistance Bot",
+  "version": "1.0",
+  "description": "Experience seamless conversations with our custom GPT bot Chrome extension. Enhance your Salesloft interactions with intelligent, real-time chat functionality.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "declarativeContent"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/skaled_abb_black16.png",
+      "48": "icons/skaled_abb_black48.png",
+      "128": "icons/skaled_abb_black128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/skaled_abb_black16.png",
+    "48": "icons/skaled_abb_black48.png",
+    "128": "icons/skaled_abb_black128.png"
+  }
+}
+
